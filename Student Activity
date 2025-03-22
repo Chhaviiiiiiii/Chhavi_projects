@@ -1,0 +1,521 @@
+
+/*
+10 event total 
+30 studets
+
+*/
+#include <iostream>
+#include <string>
+#include <math.h>
+using namespace std;
+
+
+class display
+{
+public:
+  
+   display()
+   {
+  
+       cout<<"-----------------------------------------------------------------------------------------------------------------------\n";
+
+        cout << "\t*       *  * * * *  *        * * *    * * *   *         *  * * * *  \n";
+        cout << "\t*       *  *        *       *        *     *  * *     * *  *        \n";
+        cout << "\t*       *  *        *       *        *     *  *  *  *   *  *        \n";
+        cout << "\t*   *   *  * **     *       *        *     *  *   *     *  * **     \n";
+        cout << "\t*  * *  *  *        *       *        *     *  *         *  *        \n";
+        cout << "\t* *   * *  *        *       *        *     *  *         *  *        \n";
+        cout << "\t*      *   * * * *  * * * *   * * *   * * *   *         *  * * * *  \n";
+        printf("\n---------------------------------------------------------------------------------------------------------------\n");
+        cout << endl;
+
+        cout << "\t\t\t* * * * * * *     * * * \n";
+        cout << "\t\t\t      *         *      *\n";
+        cout << "\t\t\t      *         *      *\n";
+        cout << "\t\t\t      *         *      *\n";
+        cout << "\t\t\t      *         *      *\n";
+        cout << "\t\t\t      *         *      *\n";
+        cout << "\t\t\t      *          * * *  \n";
+        printf("---------------------------------------------------------------------------------------------------------------\n");
+        printf("\n");
+
+        cout << "\t  * * * *  * * * * * * *  *       *  * * *   * * * *  *           *  * * * * *     \n";
+        cout << "\t *               *        *       *  *    *  *        *  *        *      *         \n";
+        cout << "\t *               *        *       *  *    *  *        *    *      *      *         \n";
+        cout << "\t  * * *          *        *       *  *    *  * **     *     *     *      *         \n";
+        cout << "\t       *         *        *       *  *    *  *        *       *   *      *         \n";
+        cout << "\t       *         *        *       *  *    *  *        *         * *      *         \n";
+        cout << "\t* * * *          *         * * * *   * * *   * * * *  *           *      *         \n";
+
+        printf("---------------------------------------------------------------------------------------------------------------\n");
+        printf("\n");
+
+        cout << "\t * * *    * * *  * * * * * * *  * * * * *  *            *  * * * * *  * * * * *  *       *   \n";
+        cout << "\t*     *  *             *            *       *          *       *          *        *    *    \n";
+        cout << "\t*     *  *             *            *        *        *        *          *         *  *     \n";
+        cout << "\t* * * *  *             *            *         *      *         *          *          *       \n";
+        cout << "\t*     *  *             *            *          *    *          *          *         *        \n";
+        cout << "\t*     *  *             *            *           *  *           *          *        *         \n";
+        cout << "\t*     *   * * *        *        * * * * *        *         * * * * *      *       *          \n";
+
+        cout << endl;
+         printf("---------------------------------------------------------------------------------------------------------------\n");
+
+   }
+   
+};
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+
+class brain //: public entry
+{
+ public:
+   static const int t = 30;
+   char deta[t];
+   int Participant[t];
+   brain()
+   {
+       typedef int i;
+       string fnam, lnam, nam;
+       float f_attendance = 0, count = 0;
+       i result;
+       i t_class = 700;
+       i cricket = 7;
+       i basketball = 3;
+       i painting = 2;
+       i music = 3;
+       i table_tanic = 4;
+       i batminton = 4;
+       i footbal = 8;
+       i dance = 6;
+       i swimming = 3;
+       i singing = 2;
+
+
+       // entry();
+       string detaf[t] = {"Chhavi sharma     ", "Ram sharma        ", "Babita yadav      ", "Sita gupta        ", "Arjun mehta       ", // it is user to display
+                          "Radha patel       ", "Lakshman singh    ", "Kavita joshi      ", "Ravi kumar        ", "Pooja mishra     ",
+                          "Gopal das        ", "Meera bhatt      ", "Anjali pandey    ", "Vikram Chaudhary ", "Neha Reddy       ",
+                          "Ajay Nair        ", "Divya Agarwal    ", "Manoj Malhotra   ", "Priya Bansal     ", "Nikhil Jain      ",
+                          "Renu Shukla      ", "Rajesh Tiwari    ", "Komal Saxena     ", "Vivek Khanna     ", "Jyoti Choudhary  ",
+                          "Rahul Chopra     ", "Sneha Iyer       ", "Abhishek Thakur  ", "Poonam Dutta     ", "Karan Sharma     "};
+
+       //--------------------------------------------------------------------------------------------------------------------------------------
+       //--------------------------------------------------------------------------------------------------------------------------------------
+       string deta[t] = {"Chhavi sharma", "Ram sharma", "Babita yadav", "Sita gupta", "Arjun mehta",
+                         "Radha patel", "Lakshman singh", "Kavita joshi", "Ravi kumar", "Pooja mishra",
+                         "Gopal das", "Meera bhatt", "Anjali pandey", "Vikram chaudhary", "Neha reddy",
+                         "Ajay nair", "Divya agarwal", "Manoj malhotra", "Priya bansal", "Nikhil jain",
+                         "Renu shukla", "Rajesh tiwari", "Komal saxena", "Vivek khanna", "Jyoti choudhary",
+                         "Rahul chopra", "Sneha iyer", "Abhishek thakur", "Poonam dutta", "Karan sharma"};
+
+
+       cout << "The list of the Participated student is : \n";
+
+       for (int i = 0; i < 30; i++)
+       {
+           Participant[i] = (rand() % 2 + 1);
+           cout << i + 1 << ". " << detaf[i] << " - " << Participant[i]; // (rand() % 2 + 1);
+           // rand() rendome number print kr ne k liye use kiya jata h
+           cout << endl;
+       }
+
+
+       cout << endl;
+       cout << "Enter the name of student that you want to check the Attendance of :  ";
+       cin >> fnam; // space
+       cin >> lnam; 
+       nam = fnam + " " + lnam;
+
+
+       /*
+
+
+           ---------------------------------------------------------------------------------------------
+           --------------------------------------WORK ASSING--------------------------------------------
+           ---------------------------------------------------------------------------------------------
+
+
+       */
+
+       
+               if (nam == "Chhavi sharma") 
+               {
+                   cout << "The participant name is : Chhavi sharma\n";
+                   cout << "This student has participated in  2 [ EVENTS ]\n";
+                   cout << "1. Dance - " << dance << " days \n";
+                   cout << "2. Singing - " << singing << " days\n";
+                   count = dance + singing;  
+                   f_attendance = (count / t_class) * 100;
+                   cout << "She will get " << count << " days ";
+                   printf("%.2f Attendance \n", f_attendance);
+                   // attan_percentage = (overall_attan / total_attn) * 100; // 20/200*100
+               }
+               else if (nam == "Ram sharma") // deta[1]-True.
+               {
+                   cout << "The participant name is : Ram sharma\n";
+                   cout << "This student has participated in  2 [ EVENTS ]\n";
+                   cout << "1. Football - " << footbal << " days \n";
+                   cout << "2. Batminton - " << batminton << " days\n";
+                   count = footbal + batminton;           // 11
+                   f_attendance = (count / t_class) * 100; //(11/700) * 100;
+                   cout << "He will get " << count << " days ";
+                   printf("%.2f Attendance", f_attendance);
+               }
+              
+               else if (nam == "Babita yadav")
+               {    
+                   cout << "The participant name is : Babita yadav\n";
+                   cout << "This student has participated in  2 [ EVENTS ]\n";
+                   cout << "1.Swimming - " << swimming << " days \n";
+                   cout << "2.Dance - " << dance << " days\n";
+                   count = swimming + dance;
+                   f_attendance = (count / t_class) * 100;
+                   cout << "She will get " << count << " days ";
+                   printf("%.2f Attendance", f_attendance);
+               }
+
+                else if (nam == "Sita gupta")
+               {
+                   cout << "The participant name is : Sita gupta\n";
+                   cout << "This student has participated in  1 [ EVENT ]\n";
+                   cout << "1. Dance - " << dance << " days\n";
+                   count = dance;
+                   f_attendance = (count / t_class) * 100;
+                   cout << "She will get " << count << " days ";
+                   printf("%.2f Attendance", f_attendance);
+               }
+
+                else if (nam == "Arjun mehta")
+               {
+                   cout << "The participant name is : Arjun mehta\n";
+                   cout << "This student has participated in  1 [ EVENT ]\n";
+                   cout << "1. Footbal - " << footbal << " days \n";
+                   count = footbal;
+                   f_attendance = (count / t_class) * 100;
+                   cout << "He will get " << count << " days ";
+                   printf("%.2f Attendance", f_attendance);
+               }
+
+                else if (nam == "Radha patel")
+               {
+                   cout << "The participant name is : Radha patel\n";
+                   cout << "This student has participated in  1 [ EVENT ]\n";
+                   cout << "1.Swimming - " << swimming << " days \n";
+                   count = swimming;
+                   f_attendance = (count / t_class) * 100;
+                   cout << "She will get " << count << " days ";
+                   printf("%.2f Attendance", f_attendance);
+               }
+
+                else if (nam == "Lakshman singh")
+               {   
+                   cout << "The participant name is : Lakshman singh\n";
+                   cout << "This student has participated in  1 [ EVENT ]\n";
+                   cout << "1.Cricket - " << cricket << " days \n";
+                   count = cricket;
+                   f_attendance = (count / t_class) * 100;
+                   cout << "He will get " << count << " days ";
+                   printf("%.2f Attendance", f_attendance);
+               }
+
+                else if (nam == "Kavita joshi")
+               {
+                   cout << "The participant name is : Kavita joshi\n";
+                   cout << "This student has participated in  1 [ EVENT ]\n";
+                   cout << "1. Swimming - " << swimming << " days \n";
+                   count = swimming;
+                   f_attendance = (count / t_class) * 100;
+                   cout << "She will get " << count << " days ";
+                   printf("%.2f Attendance", f_attendance);
+               }
+
+                else if (nam == "Ravi kumar")
+               {
+                   cout << "The participant name is : Ravi kumar\n";
+                   cout << "This student has participated in  2 [ EVENTS ]\n";
+                   cout << "1. Table Tanic - " << table_tanic << " days \n";
+                   cout << "2. Swimming - " << swimming << " days\n";
+                   count = table_tanic + swimming;
+                   f_attendance = (count / t_class) * 100;
+                   cout << "He will get " << count << " days ";
+                   printf("%.2f Attendance", f_attendance);
+               }
+
+               else if  (nam == "Pooja mishra")
+               {
+                   cout << "The participant name is : Pooja mishra\n";
+                   cout << "This student has participated in  2 [ EVENTS ]\n";
+                   cout << "1. Swimming - " << swimming << " days \n";
+                   cout << "2. Dance - " << dance << " days\n";
+                   count = swimming + dance;
+                   f_attendance = (count / t_class) * 100;
+                   cout << "She will get " << count << " days ";
+                   printf("%.2f Attendance", f_attendance);
+               } 
+
+                else if (nam == "Gopal das")
+               {
+                 cout << "The participant name is : Gopal das\n";
+                   cout << "This student has participated in  1 [ EVENT ]\n";
+                   cout << "1. Table Tanic - " << table_tanic << " days \n";
+                   count = table_tanic;
+                   f_attendance = (count / t_class) * 100;
+                   cout << "He will get " << count << " days ";
+                   printf("%.2f Attendance", f_attendance);
+               }
+
+                else if (nam == "Meera bhatt")
+               {
+                   cout << "The participant name is : Meera bhatt\n";
+                   cout << "This student has participated in  2 [ EVENTS ]\n";
+                   cout << "1. Table Tanic - " << table_tanic << " days \n";
+                   cout << "2. Cricket - " << cricket << " days\n";
+                   count = table_tanic + cricket;
+                   f_attendance = (count / t_class) * 100;
+                   cout << "She will get " << count << " days ";
+                   printf("%.2f Attendance", f_attendance);
+               }
+
+                else if (nam == "Anjali pandey")
+               {
+                   cout << "The participant name is : Anjali pandey\n";
+                   cout << "This student has participated in  1 [ EVENT ]\n";
+                   cout << "1. Painting - " << painting << " days \n";
+                   count = painting;
+                   f_attendance = (count / t_class) * 100;
+                   cout << "She will get " << count << " days ";
+                   printf("%.2f Attendance", f_attendance);
+               }
+
+                else if (nam == "Vikram chaudhary")
+               {
+                   cout << "The participant name is : Vikram chaudhary\n";
+                   cout << "This student has participated in  1 [ EVENT ]\n";
+                   cout << "1. Table Tanic - " << table_tanic << " days \n";
+                   count = table_tanic;
+                   f_attendance = (count / t_class) * 100;
+                   cout << "He will get " << count << " days ";
+                   printf("%.2f Attendance", f_attendance);
+               }
+
+                else if (nam == "Neha reddy")
+               {
+                   cout << "The participant name is : Neha reddy\n";
+                   cout << "This student has participated in  2 [ EVENTS ]\n";
+                   cout << "1. Painting - " << painting << " days \n";
+                   cout << "2. Swimming - " << swimming << " days\n";
+                   count = swimming + painting;
+                   f_attendance = (count / t_class) * 100;
+                   cout << "She will get " << count << " days ";
+                   printf("%.2f Attendance", f_attendance);
+               }
+
+                else if (nam == "Ajay nair")
+               {
+                   cout << "The participant name is : Ajay nair\n";
+                   cout << "This student has participated in  2 [ EVENTS ]\n";
+                   cout << "1. Football - " << footbal << " days \n";
+                   cout << "2. Basketball - " << basketball << " days\n";
+                   count = footbal + basketball;
+                   f_attendance = (count / t_class) * 100;
+                   cout << "He will get " << count << " days ";
+                   printf("%.2f Attendance", f_attendance);
+               }
+
+                else if (nam == "Divya agarwal")
+               {
+                   cout << "The participant name is : Divya agarwal\n";
+                   cout << "This student has participated in  2 [ EVENTS ]\n";
+                   cout << "1. Table Tanic - " << table_tanic << " days\n";
+                   cout << "2. cricket - " << cricket << " days\n";
+                   count = table_tanic + cricket;
+                   f_attendance = (count / t_class) * 100;
+                   cout << "She will get " << count << " days ";
+                   printf("%.2f Attendance", f_attendance);
+               }
+
+                else if (nam == "Manoj malhotra")
+               {
+                   cout << "The participant name is : Manoj malhotra\n";
+                   cout << "This student has participated in  2 [ EVENTS ]\n";
+                   cout << "1. Football - " << footbal << " days \n";
+                   cout << "2. Basketball - " << basketball << " days\n";
+                   count = footbal + basketball;
+                   f_attendance = (count / t_class) * 100;
+                   cout << "He will get " << count << " days ";
+                   printf("%.2f Attendance", f_attendance);
+               }
+
+                else if (nam == "Priya bansal")
+               {
+                   cout << "The participant name is : Priya bansal\n";
+                   cout << "This student has participated in  1 [ EVENT ]\n";
+                   cout << "1. Table Tanic - " << table_tanic << " days \n";
+                   count = table_tanic;
+                   f_attendance = (count / t_class) * 100;
+                   cout << "She will get " << count << " days ";
+                   printf("%.2f Attendance", f_attendance);
+               }
+
+                else if (nam == "Nikhil jain")
+               {
+                   cout << "The participant name is : Nikhil jain\n";
+                   cout << "This student has participated in  1 [ EVENT ]\n";
+                   cout << "1. Table Tanic - " << table_tanic << " days \n";
+                   count = table_tanic;
+                   f_attendance = (count / t_class) * 100;
+                   cout << "He will get " << count << " days ";
+                   printf("%.2f Attendance", f_attendance);
+               }
+                 
+                else  if (nam == "Renu shukla")
+               {
+                   cout << "The participant name is : Renu shukla\n";
+                   cout << "This student has participated in  2 [ EVENTS ]\n";
+                   cout << "1. Table Tanic - " << table_tanic << " days \n";
+                   cout << "2. Cricket - " << cricket << " days\n";
+                   count = table_tanic + cricket;
+                   f_attendance = (count / t_class) * 100;
+                   cout << "She will get " << count << " days ";
+                   printf("%.2f Attendance", f_attendance);
+               }
+
+               else if (nam == "Rajesh tiwari")
+               {
+                   cout << "The participant name is : Rajesh tiwari\n";
+                   cout << "This student has participated in  2 [ EVENT ]\n";
+                   cout << "1. Football - " << footbal << " days \n";
+                   cout << "2. Basketball - " << basketball << " days\n";
+                   count = footbal + basketball;
+                   f_attendance = (count / t_class) * 100;
+                   cout << "He will get " << count << " days ";
+                   printf("%.2f Attendance", f_attendance);
+               }
+
+              else  if (nam == "Komal saxena")
+               {
+                   cout << "The participant name is : Komal saxena\n";
+                   cout << "This student has participated in  2 [ EVENTS ]\n";
+                   cout << "1. Painting - " << painting << " days \n";
+                   cout << "2. Swimming - " << swimming << " days\n";
+                   count = swimming + painting;
+                   f_attendance = (count / t_class) * 100;
+                   cout << "She will get " << count << " days ";
+                   printf("%.2f Attendance", f_attendance);
+               }
+
+               else if  (nam == "Vivek khanna")
+               {
+                   cout << "The participant name is : Vivek khanna\n";
+                   cout << "This student has participated in  2 [ EVENTS ]\n";
+                   cout << "1. Football - " << footbal << " days \n";
+                   cout << "2. Basketball - " << basketball << " days\n";
+                   count = footbal + basketball;
+                   f_attendance = (count / t_class) * 100;
+                   cout << "You will get " << count << " days ";
+                   printf("%.2f Attendance", f_attendance);
+               }
+
+                else if (nam == "Jyoti choudhary")
+               {
+                   cout << "The participant name is : Jyoti choudhary\n";
+                   cout << "This student has participated in  1 [ EVENT ]\n";
+                   cout << "1. Painting - " << painting << " days \n";
+                   count = painting;
+                   f_attendance = (count / t_class) * 100;
+                   cout << "She will get " << count << " days ";
+                   printf("%.2f Attendance", f_attendance);
+               }
+
+
+             else if (nam == "Rahul chopra")
+               {
+                   cout << "The participant name is : Rahul chopra\n";
+                   cout << "This student has participated in  2 [ EVENTS ]\n";
+                   cout << "1. Painting - " << painting << " days \n";
+                   cout << "2. Swimming - " << swimming << " days\n";
+                   count = swimming + painting;
+                   f_attendance = (count / t_class) * 100;
+                   cout << "He will get " << count << " days ";
+                   printf("%.2f Attendance", f_attendance);
+               }
+
+           else   if (nam == "Abhishek thakur")
+               {
+                   cout << "The participant name is : Abhishek thakur\n";
+                   cout << "This student has participated in  1 [ EVENT ]\n";
+                   cout << "1. Table Tanic - " << table_tanic << " days \n";
+                   count = table_tanic;
+                   f_attendance = (count / t_class) * 100;
+                   cout << "He will get " << count << " days ";
+                   printf("%.2f Attendance", f_attendance);
+               }
+
+           else if (nam == "Sneha iyer")
+               {
+                   cout << "The participant name is : Sneha iyer\n";
+                   cout << "This student has participated in  2 [ EVENTS ]\n";
+                   cout << "1. Painting - " << painting << " days \n";
+                   cout << "2. Music - " << music << " days\n";
+                   count = music + painting;
+                   f_attendance = (count / t_class) * 100;
+                   cout << "She will get " << count << " days ";
+                   printf("%.2f Attendance", f_attendance);
+               }
+
+          else if (nam == "Poonam dutta")
+               {
+                   cout << "The participant name is : Poonam yadav\n";
+                   cout << "This student has participated in  1 [ EVENT ]\n";
+                   cout << "1. Table Tanic - " << table_tanic << " days \n";
+                   count = table_tanic;
+                   f_attendance = (count / t_class) * 100;
+                   cout << "She will get " << count << " days ";
+                   printf("%.2f Attendance", f_attendance);
+               }
+
+          else if (nam == "Karan sharma")
+               {
+                   cout << "The participant name is : Karan sharma\n";
+                   cout << "This student has participated in  2 [ EVENTS ]\n";
+                   cout << "1. Football - " << footbal << " days \n";
+                   cout << "2. Basketball - " << basketball << " days\n";
+                   count = footbal + basketball;
+                   f_attendance = (count / t_class) * 100;
+                   cout << "He will get " << count << " days ";
+                   printf("%.2f Attendance", f_attendance);
+               }
+
+            else {
+                printf("\n---------------------------------------------------------------------------------------------------------------\n");
+                cout<<"\n--------------------------------------------------------INVALID INPUT!!-----------------------------------------\n";
+                cout<<"-------------------------------------------------PLEASE TRY AGAIN!!!!!!!!!!!!-------------------------------------\n";
+                printf("\n---------------------------------------------------------------------------------------------------------------\n");
+               }    
+       
+      
+   }
+};
+
+//----------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------
+int main()
+{
+   cout<<"\n\n\n";
+   cout<<"-----------------------------------------------------------------------------------------------------------------------\n";
+   cout << "Submitted By :- Aakash Thakur, Abhay Pratap Singh, Chhavi Sharma, Dashrath S Chouhan and Dheerendra Patel\n";
+   cout << "Roll No. :- 0832CS231003,0832CS231007,0832CS231052,0832CS231054 and 0832CS231060\n";
+   cout << "Department :- Computer Science Engineering\n";
+   cout << "Project Name :- STUDENT ACTIVITY.\n";
+
+   //------------------
+   display D;
+   //------------------
+   brain B;
+}
